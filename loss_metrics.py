@@ -52,16 +52,18 @@ class DiceLoss(nn.Module):
 
 class ScaledDiceLoss(nn.Module):
     """
-    Scaled version of the dice loss
+    Class that implements scaled version of the dice loss to handle significant background regions.
 
 
     """
 
+    # constructor call dice loss
     def __init__(self, smooth=1, threshold_zero_loss=10):
         super(ScaledDiceLoss, self).__init__()
         self.tissueDice = DiceLoss(smooth)
         self.threshold_zero_loss = threshold_zero_loss
 
+    # forward pass
     def forward(self, inputs, targets):
         mask_of_low_loss = should_return_low_loss(inputs, targets, self.threshold_zero_loss)
 
@@ -104,7 +106,7 @@ def calculate_iou_infer(pred, target):
     intersection = np.logical_and(pred, target).sum()
     union = np.logical_or(pred, target).sum()
 
-    if union == 0:  # if union is zero, treat as a perfect match
+    if union == 0: # discount union = 0 because binary pixel error
         return 1.0
 
     return intersection / (union + 1e-6)  # calculate IoU
@@ -127,7 +129,7 @@ def calculate_dice_infer(pred, target):
     intersection = np.logical_and(pred, target).sum()
     denominator = pred.sum() + target.sum()
 
-    if denominator == 0:  # if denominator is zero, treat as a perfect match
+    if denominator == 0:  # discount denominator = 0 because binary pixel error
         return 1.0
 
     return (2 * intersection) / (denominator + 1e-6)  # calculate Dice
