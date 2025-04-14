@@ -14,29 +14,17 @@ The repository also explores potential projection techniques (e.g., canonical co
 ## Repository Structure
 
 ├── dataset.py                    # Dataset loading and preprocessing
-
-├── experiments.py                # Feature extraction, similarity metrics, and visualization functions
-
+├── experiments.py                # Feature extraction, similarity metrics, and visualization functions (all mechanistic interpretability experiment functions are in this notebook)
 ├── inference.py                  # Inference utilities for testing
-
-├── loss_metrics.py               # Segmentation metrics and losses (Dice, IoU, etc.)
-
+├── loss_metrics.py               # Segmentation metrics and losses (Scaled Dice, IoU, etc.)
 ├── mask2former.ipynb             # Mask2Former-specific training and analysis notebook
-
-├── mech_interp_experiment.ipynb  # Main experiment notebook for mechanistic interpretability
-
+├── mech_interp_experiment.ipynb  # Main experiment and analysis notebook for mechanistic interpretability (bulk of project here)
 ├── train.py                      # Model training functions
-
-├── unetpp.ipynb                  # UNet++-specific analysis notebook
-
+├── unetpp.ipynb                  # UNet++-specific training and analysis notebook
 ├── utils.py                      # Helper utilities
-
 ├── visualization.py              # Data visualization for pre-processing, traning, and testing
-
 ├── .gitignore
-
 ├── requirements.txt              # Python dependencies (to be completed)
-
 └── README.md                     # This file
 
 ## Models & Data
@@ -47,7 +35,7 @@ Due to their large size, the dataset and pre-trained models are not included in 
 - **Pretrained UNet++ and Mask2Former Checkpoints:** [Download Models (Google Drive)](https://drive.google.com/drive/folders/1hXUsWBKZdr9SpN_NGXoQNnxYNQ4i4twI?usp=sharing)
 
 After downloading, place the files into the appropriate directories (`data/data` and `models/`) at the root of the repository.
-
+```
 **Data Directory Structure**
 
 ├── data
@@ -64,15 +52,11 @@ After downloading, place the files into the appropriate directories (`data/data`
 
 ├── models
    ├── unet
-      ├── unetpp_epoch10_batch16
+      ├── unetpp_epoch10_batch16 
    ├── transformer
       ├── mask2former_epoch10_batch16
+```
 
-
-
-├── requirements.txt              # Python dependencies (to be completed)
-
-└── README.md                     # This file
 
 ## Installation
 
