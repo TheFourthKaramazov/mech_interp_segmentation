@@ -109,7 +109,7 @@ After downloading, place the files into the appropriate directories (`data/data`
   - Detailed analysis of representation similarities and differences.
 
 
-### Results and Analysis
+## Results and Analysis
 
 This notebook presents an in-depth investigation into the internal representations of two state-of-the-art segmentation models—Unet++ (a CNN-based architecture) and Mask2Former (a Transformer-based architecture)—to evaluate the universality hypothesis. The central objective was to determine whether models trained on the same segmentation task converge to similar internal representations despite their fundamentally different design principles. Both quantitative metrics and qualitative visualizations were employed to provide a comprehensive view.
 
