@@ -24,7 +24,7 @@ The repository also explores potential projection techniques (e.g., canonical co
 ├── unetpp.ipynb                  # UNet++-specific training and analysis notebook
 ├── utils.py                      # Helper utilities
 ├── visualization.py              # Data visualization for pre-processing, traning, and testing
-├── .gitignore
+├── .gitignore                    # used to ignore data and model checkpoints
 ├── requirements.txt              # Python dependencies (to be completed)
 └── README.md                     # This file
 ```
