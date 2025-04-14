@@ -48,6 +48,32 @@ Due to their large size, the dataset and pre-trained models are not included in 
 
 After downloading, place the files into the appropriate directories (`data/data` and `models/`) at the root of the repository.
 
+**Data Directory Structure**
+
+├── data
+   ├── data
+      ├── ISIC2018_Test_GroundTruth
+      ├── ISIC2018_Test_Input
+      ├── ISIC2018_Training_GroundTruth
+      ├── ISIC2018_Training_Input
+      ├── ISIC2018_Validation_GroundTruth
+      ├── ISIC2018_Validation_Input
+
+
+**Models Directory Structure**
+
+├── models
+   ├── unet
+      ├── unetpp_epoch10_batch16
+   ├── transformer
+      ├── mask2former_epoch10_batch16
+
+
+
+├── requirements.txt              # Python dependencies (to be completed)
+
+└── README.md                     # This file
+
 ## Installation
 
 1. **Clone the repository:**
