@@ -13,6 +13,7 @@ The repository also explores potential projection techniques (e.g., canonical co
 
 ## Repository Structure
 
+```
 ├── dataset.py                    # Dataset loading and preprocessing
 ├── experiments.py                # Feature extraction, similarity metrics, and visualization functions (all mechanistic interpretability experiment functions are in this notebook)
 ├── inference.py                  # Inference utilities for testing
@@ -26,7 +27,7 @@ The repository also explores potential projection techniques (e.g., canonical co
 ├── .gitignore
 ├── requirements.txt              # Python dependencies (to be completed)
 └── README.md                     # This file
-
+```
 ## Models & Data
 
 Due to their large size, the dataset and pre-trained models are not included in the repository directly. Instead, please use the following Google Drive links to download the required files:
