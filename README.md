@@ -36,8 +36,9 @@ Due to their large size, the dataset and pre-trained models are not included in 
 - **Pretrained UNet++ and Mask2Former Checkpoints:** [Download Models (Google Drive)](https://drive.google.com/drive/folders/1hXUsWBKZdr9SpN_NGXoQNnxYNQ4i4twI?usp=sharing)
 
 After downloading, place the files into the appropriate directories (`data/data` and `models/`) at the root of the repository.
-```
+
 **Data Directory Structure**
+```
 
 ├── data
    ├── data
@@ -48,8 +49,11 @@ After downloading, place the files into the appropriate directories (`data/data`
       ├── ISIC2018_Validation_GroundTruth
       ├── ISIC2018_Validation_Input
 
+```
 
 **Models Directory Structure**
+
+```
 
 ├── models
    ├── unet
