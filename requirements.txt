@@ -1,0 +1,10 @@
+matplotlib
+numpy
+Pillow
+torch
+torchvision
+segmentation-models-pytorch
+tqdm
+scikit-learn
+gdown
+transformers
