@@ -33,7 +33,7 @@ The repository also explores potential projection techniques (e.g., canonical co
 Due to their large size, the dataset and pre-trained models are not included in the repository directly. Instead, please use the following Google Drive links to download the required files:
 
 - **Preprocessed ISIC 2018 Dataset (Binary Segmentation Task):** [Download Dataset (Google Drive)](https://drive.google.com/file/d/1V09WzvSrCrUuZs8u-pmbH-1WVcBhwwlp/view?usp=share_link)
-- **Pretrained UNet++ and Mask2Former Checkpoints:** [Download Models (Google Drive)](https://drive.google.com/drive/folders/1hXUsWBKZdr9SpN_NGXoQNnxYNQ4i4twI?usp=sharing)
+- **Pretrained UNet++ and Mask2Former Checkpoints:** [Download Models (Google Drive)](https://drive.google.com/drive/folders/1Ngj28VTGvZMF6Wc5KD_Fp_kJTQf0MYo1?usp=share_link)
 
 After downloading, place the files into the appropriate directories (`data/data` and `models/`) at the root of the repository.
 
