@@ -68,8 +68,8 @@ After downloading, place the files into the appropriate directories (`data/data`
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/unetpp-mask2former-universality.git
-   cd unetpp-mask2former-universality
+   git clone https://github.com/TheFourthKaramazov/mech_interp_segmentation.git
+   cd mech_interp_segmentation
    ```
 2. **Set up a virtual environment and install dependencies:**
 
